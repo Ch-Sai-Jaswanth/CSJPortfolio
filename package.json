@@ -1,0 +1,38 @@
+{
+  "name": "csjportfolio",
+  "version": "1.0.0",
+  "description": "Sai Jaswanth Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "vite",
+    "build": "vite build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ch-Sai-Jaswanth/CSJPortfolio.git"
+  },
+  "keywords": [
+    "Portfolio",
+    "ReactJs",
+    "Tailwind"
+  ],
+  "author": "Sai Jaswanth Chavata",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ch-Sai-Jaswanth/CSJPortfolio/issues"
+  },
+  "homepage": "https://github.com/Ch-Sai-Jaswanth/CSJPortfolio#readme",
+  "dependencies": {
+    "framer-motion": "^11.2.13",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.24.1",
+    "react-tilt": "^1.0.2"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.39",
+    "tailwindcss": "^3.4.4"
+  }
+}
