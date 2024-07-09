@@ -4,6 +4,7 @@ import emailjs from "@emailjs/browser"
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
+import "../../src/index.css"
 
 const Contact = () => {
     const formRef = useRef();
@@ -24,37 +25,7 @@ const Contact = () => {
         });
     };
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        setLoading(true);
-
-        emailjs.send(
-            import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-            import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
-            {
-                from_name: form.name,
-                to_name: "Sai Jaswanth",
-                from_email: form.email,
-                to_email: "saijaswanthch2003@gmail.com",
-                message: form.message,
-            },
-            import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
-        ).then(() => {
-            setLoading(false);
-            alert("Thank you for your message. I'll get back to you as soon as possible");
-            setForm(
-                {
-                    name: "",
-                    email: "",
-                    message: "",
-                }
-            );
-            (error) => {
-                setLoading(false);
-                alert("Something went wrong. Please try again later");
-            }
-        });
-    };
+    
 
 return (
     <div
@@ -65,11 +36,10 @@ return (
         className='flex-[0.75] bg-black-100 p-8 rounded-2xl'
       >
         <p className={styles.sectionSubText}>Get in touch</p>
-        <h3 className={styles.sectionHeadText}>Contact.</h3>
+        <h3 className={styles.sectionHeadText}>Contact</h3>
 
         <form
           ref={formRef}
-          onSubmit={handleSubmit}
           className='mt-12 flex flex-col gap-8'
         >
           <label className='flex flex-col'>
