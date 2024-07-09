@@ -1,32 +1,27 @@
 import React from "react";
-import ReactDOM from "react-dom/client";
-import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 import Header from "./components/Header";
 import About from "./components/About";
+import Projects from "./components/Projects";
+import Contact from "./components/Contact";
+import Self from "./components/Self";
 
 const App = () => {
   return (
-    <div className="app">
-      <Header />
-      <Outlet />
-    </div>
+    <BrowserRouter>
+      <div className="relative z-0 bg-black">
+        <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
+          <Header />
+          <Self />
+        </div>
+        <About />
+        <Projects />
+        <div className="relative z-0">
+            <Contact />
+        </div>
+      </div>
+    </BrowserRouter>
   );
 };
 
-const appRouter = createBrowserRouter([
-  {
-    path: "/",
-    element: <App />,
-    children: [
-      {
-        path: "/about",
-        element: <About />,
-      },
-    ],
-    errorElement: "Page not found",
-  },
-]);
-
-const root = ReactDOM.createRoot(document.getElementById("root"));
-
-root.render(<RouterProvider router={appRouter} />);
+export default App;
