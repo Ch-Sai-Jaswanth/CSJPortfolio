@@ -19,12 +19,26 @@ export const navLinks = [
 
 export const services = [
     {
-      title: "Web Developer",
+      title: "Full Stack Web Developer",
       icon: web,
     },
     {
-      title: "Backend Developer",
-      icon: backend,
+      title: "React Developer",
+      icon: mobile,
     }
 ];
   
+export const projects = [
+  {
+    name : "Portfolio",
+    description : "My personal portfolio website",
+    image : "",
+    link : "www.google.com"
+  },
+  {
+    name : "Weather App",
+    description : "A simple weather app",
+    image : "",
+    link : "www.facebook.com"
+  }
+]
