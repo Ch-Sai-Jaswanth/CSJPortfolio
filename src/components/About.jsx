@@ -8,19 +8,17 @@ import { services } from "../utils/constants";
 import "../styles";
 
 const ServiceCard = ({ index, title, icon }) => (
-  <Tilt className="xs:w-[250px] w-full">
+  <Tilt className="xs:w-[250px] w-1/3">
     <motion.div
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
       className="w-full blue-green-gradient p-[1px] rounded-[20px] shadow-card"
     >
-      <div
-        options={{
+      <div options={{
           max: 45,
           scale: 1,
           speed: 450,
         }}
-        className="bg-black rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"
-      >
+        className="bg-black rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col">
         <img
           src={icon}
           alt="web-development"
@@ -44,7 +42,7 @@ const About = () => {
       </motion.div>
 
       <motion.p
-        variants={fadeIn("", "", 0.1, 1)}
+        variants={fadeIn("right", "", 0.1, 1)}
         className="mt-4 text-gray-400 text-[17px] max-w-3xl leading-[30px]"
       >
         I'm a skilled software developer with experience in JavaScript, and
