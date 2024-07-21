@@ -15,5 +15,7 @@ import css from "./css.png";
 import javascript from "./javascript.png";
 import nodejs from "./nodejs.png";
 import mongodb from "./mongodb.png";
+import zomato from "./zomato.png";
+import docker from "./docker.png";
 
-export { logo, menu, close, web, mobile, backend, creator, rtcclone, weatherapp, portfolio, github, react, html, css, javascript, nodejs, mongodb};
+export { logo, menu, close, web, mobile, backend, creator, rtcclone, weatherapp, zomato, portfolio, github, react, html, css, javascript, nodejs, mongodb, docker};

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { navLinks } from "../utils/constants";
 import { styles } from "../styles";
-import logo from "../images/CSJLogoNew.png";
+import logo from "../assets/CSJLogoNew.png";
 
 const Header = () => {
   const [active, setActive] = useState("");

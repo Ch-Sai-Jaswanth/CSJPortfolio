@@ -6,7 +6,7 @@ import { fadeIn, textVariant } from "../utils/motion";
 import Button from "./Button";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../utils/constants";
-import { github } from "../assets";
+import { github, docker } from "../assets";
 
 const ProjectCard = ({
   index,
